@@ -14,12 +14,11 @@ USTRUCT(BlueprintType)
 struct PROJECT_SRPG0000_API FNpcScriptDataTableRow : public FTableRowBase
 {
 	GENERATED_USTRUCT_BODY()
-
-		UPROPERTY(EditAnywhere)
+	UPROPERTY(BlueprintReadWrite,EditAnywhere)
 		int SId;
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 		int SituationId;
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 		TArray<FString> Conversation;
 };
 /**
@@ -35,7 +34,7 @@ public:
 		class UDataTable* DataTable;
 #endif
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
-		TMap<int, FNpcScriptDataTableRow> items;
+		TArray<FNpcScriptDataTableRow> scriptItems;
 	// データ作成用の関数
 	UFUNCTION(BlueprintCallable, meta = (CallInEditor = "true"))
 		void Build();

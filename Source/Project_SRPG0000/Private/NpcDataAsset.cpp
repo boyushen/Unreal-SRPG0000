@@ -46,7 +46,7 @@ void UNpcDataAsset::Build()
 		//PackagesToSave.Add(DataTable->GetOutermost());
 	//}
 
-	items.Empty();
+	scriptItems.Empty();
 
 	// データテーブルの行の要素を配列で取得
 	TArray<FName> RowNames = DataTable->GetRowNames();
@@ -64,7 +64,7 @@ void UNpcDataAsset::Build()
 		TableData.Conversation = TableRow->Conversation;
 
 		// Mapに追加する
-		items.Add(TableRow->SId, TableData);
+		scriptItems.Add(TableData);
 	}
 
 	// データアセットに編集フラグを追加
