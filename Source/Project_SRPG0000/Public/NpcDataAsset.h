@@ -55,6 +55,8 @@ public:
 		class USkeletalMesh* belt;
 	UPROPERTY(BlueprintReadOnly, EditAnywhere)
 		class USkeletalMesh* face;
+	UPROPERTY(BlueprintReadOnly, EditAnywhere)
+		class USkeletalMesh* cloth;
 	// 会話コレクション転換
 	UFUNCTION(BlueprintCallable, meta = (CallInEditor = "true"))
 		void BuildConversation();
