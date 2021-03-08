@@ -17,7 +17,7 @@
 * ネットを参照して自動的にDATATable into DataAssetをするですが、モジュールを追加しないといけないので、
 * しばらくデータを変換だけにします
 */
-void UNpcDataAsset::Build()
+void UNpcDataAsset::BuildConversation()
 {
 #if WITH_EDITORONLY_DATA
 

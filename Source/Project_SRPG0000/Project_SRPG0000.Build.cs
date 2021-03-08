@@ -12,7 +12,7 @@ public class Project_SRPG0000 : ModuleRules
 
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
+		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
 
 		bFasterWithoutUnity = true;
 		// Uncomment if you are using Slate UI
