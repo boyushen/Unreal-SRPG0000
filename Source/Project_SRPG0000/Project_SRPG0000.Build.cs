@@ -10,7 +10,7 @@ public class Project_SRPG0000 : ModuleRules
 		
 		MinFilesUsingPrecompiledHeaderOverride = 1;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" , "UMG" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
 
